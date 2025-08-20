@@ -1,0 +1,15 @@
+/*
+ * Este archivo es opcional, pero es necesario para la animación de aparición.
+ * También puedes agregar aquí cualquier estilo personalizado que no sea de Tailwind.
+ */
+
+ .appear-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
